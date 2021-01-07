@@ -1,8 +1,11 @@
-.app-inp {
-  border: 2px solid rgb(88, 86, 86);
-  padding: 3px 15px;
-  margin-left: 10px;
-  background-color: #ccc;
+.inputStyle {
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid #6c6c6c;
   border-radius: 3px;
-  
+  padding: 8px 10px;
+  font-size: 18px;
+  margin: 15px 0;
+  background-color: #ccc;
+  outline: none;
 }

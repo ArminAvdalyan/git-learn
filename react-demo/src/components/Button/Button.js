@@ -1,7 +1,8 @@
 import React from "react";
 import "./Button.css";
-function Button() {
-  return <button className="app-btn">Buy</button>
+
+const Button = (props) => {
+  return  <button onClick={props.onclick} className="btnStyle">{props.text}</button>
 }
 
 export default Button;

@@ -1,15 +1,12 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+import Form from "./Container/Form/Form.js";
 
-import Button from "./components/Button/Button.js";
-import Input from "./components/Input/Input.js";
-import Title from "./components/Title/Title.js";
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <Title/>
-      <Input/>
-      <Button/>
+      <h1>Task 1</h1>
+      <Form />
     </div>
   );
 }
