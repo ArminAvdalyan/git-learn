@@ -1,12 +1,16 @@
 // import logo from './logo.svg';
 import './App.css';
-import Form from "./Container/Form/Form.js";
+import Layout from './Components/Layout/Layout';
+import Footer from './Container/Footer/Footer';
+import Header from './Container/Header/Header';
+
 
 const App = () => {
   return (
     <div className="App">
-      <h1>Task 1</h1>
-      <Form />
+      <Header />
+      <Layout />
+      <Footer />
     </div>
   );
 }
