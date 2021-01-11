@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import Button from "../../Components/Button/Button.js";
-import Input from "../../Components/Input/Input.js";
-import { Validate } from "../../util/validate.js";
-import "./Form.css";
+import Button from "../../../Components/Button/Button.js";
+import Input from "../../../Components/Input/Input.js";
+import { Validate } from "../../../util/validate.js";
+import "./LoginForm.css";
 
-const Form = () => {
+const LoginForm = () => {
   const [inputText, setInputText] = useState("");
   const [inputEmail, setInputEmail] = useState("");
 
@@ -33,10 +33,10 @@ const Form = () => {
     <form className="formStyle">
       <Input onChange={onchangeText} value={inputText} type="text" placeholder="Name" />
       <Input onChange={onchangeEmail} value={inputEmail} type="email" placeholder="Email" />
-      <Button onclick={onclickBtn} text="Submit" />
+      <Button onclick={onclickBtn} text="Login" />
     </form>
   )
 }
 
-export default Form;
+export default LoginForm;
  
