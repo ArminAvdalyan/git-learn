@@ -1,18 +1,15 @@
 import React, { useState } from "react";
+
 import Button from "../../../Components/Button/Button.js";
 import Input from "../../../Components/Input/Input.js";
 import { Validate } from "../../../util/validate.js";
+
 import "./SignupForm.css";
 
 const SignupForm = () => {
   const [inputText, setInputText] = useState("");
   const [inputEmail, setInputEmail] = useState("");
   const [isLogin, setIsLogin] = useState(true);
-
-  // const toggleLogin = () => {
-  //   setIsLogin(!setIsLogin);
-  // }
-
   const onchangeText = (e) => {
     e.preventDefault();
     setInputText(e.target.value);
