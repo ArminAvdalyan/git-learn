@@ -1,13 +1,14 @@
 import React, { useState } from "react";
+
 import Button from "../../../Components/Button/Button.js";
 import Input from "../../../Components/Input/Input.js";
 import { Validate } from "../../../util/validate.js";
+
 import "./LoginForm.css";
 
 const LoginForm = () => {
   const [inputText, setInputText] = useState("");
   const [inputEmail, setInputEmail] = useState("");
-
   const onchangeText = (e) => {
     e.preventDefault();
     setInputText(e.target.value);
